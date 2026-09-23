@@ -1,0 +1,19 @@
+LAB 6 LOGBOOK - Ankush Bisht  - NST123
+SETUP: my working directory is home
+T1 prediction: I think ls / will show about 13  items
+T1: /hold bin hold all the commands as files
+T1: /dev holds system resources releated files like null, disk0 paritions
+T1: / means root and ~ means HOME directory, . means current directory
+T1: the OS groups files by users
+T2 prediction: ./deploy will not run because it don't have execution permission. It only contain read and write permission
+T2 prediction: appending after u-w will not work because we habe removed the write permission of the file for the user which include us as well
+T2: -rw-r--r-- written in numbers is 644
+T2: ./deploy failed at first because it doesn't have required permission to execute the content of the deploy file
+T2: the new policy needed chmod to give sufficient permission to the file to perform certain operation like read write and execute the file
+-rw-r--r--  1 ankushbisht  staff  36  8 Sep 01:39 deploy
+T3 prediction: ./nst-info will not work as the file is not exectuable and have read and write permission only
+T3 prediction: adding .py to the name will still run the file as we have given it the executable permission and add .py in the name is mere a name change
+T3: python3 nst-info worked but ./nst-info failed because the owner don't have executable permission for that specific file
+T3: renaming the file to .py changed nothing as the system still found it non executable
+T3: file extensions are actually used by humans to recognise the file and identify the filetype
+T4 prediction: a file called ls in ~/nst/bin will be executed if the path of that file is placed before the actual ls command in PATH variable
